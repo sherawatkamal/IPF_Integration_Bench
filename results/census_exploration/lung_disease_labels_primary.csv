@@ -1,0 +1,26 @@
+disease,disease_ontology_term_id,n_cells,n_donors,n_datasets
+normal,PATO:0000461,3148828,508,34
+COVID-19,MONDO:0100096,812968,88,7
+lung adenocarcinoma,MONDO:0005061,721547,153,5
+interstitial lung disease,MONDO:0015925,316801,61,2
+pulmonary fibrosis,MONDO:0002771,268932,55,1
+squamous cell lung carcinoma,MONDO:0005097,234698,46,3
+bronchopulmonary dysplasia,MONDO:0019091,150671,13,1
+non-small cell lung carcinoma,MONDO:0005233,94157,13,1
+chronic obstructive pulmonary disease,MONDO:0005002,90062,27,2
+lung cancer,MONDO:0008903,40979,7,1
+pulmonary sarcoidosis,MONDO:0001708,33625,6,2
+pneumonia,MONDO:0005249,31923,13,1
+pulmonary emphysema,MONDO:0004849,31792,6,2
+small cell lung carcinoma,MONDO:0008433,31540,9,1
+non-specific interstitial pneumonia,MONDO:0019622,29925,7,2
+anthracosis,MONDO:0006654,21203,3,1
+lung large cell carcinoma,MONDO:0003050,21167,1,1
+hypersensitivity pneumonitis,MONDO:0017853,20067,6,2
+cystic fibrosis,MONDO:0009061,17590,22,1
+lymphoid interstitial pneumonia,MONDO:0009537,16681,2,1
+lymphangioleiomyomatosis,MONDO:0011705,12374,2,1
+pleomorphic carcinoma,MONDO:0003573,10765,1,1
+anencephaly,MONDO:0000819,5499,2,1
+breast cancer,MONDO:0007254,2962,1,1
+colorectal cancer,MONDO:0005575,975,1,1

@@ -1,0 +1,22 @@
+source,dataset_id,study,IPF_donors,IPF_cells,control_donors,control_cells,assays,only_10x3p,has_both
+Natri_2024_ILD,f14bc322-1322-4184-8d16-409557525ea5,Natri_2024,39,199368,37,83848,10x 5' v2 (283216),False,True
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Kaminski_2020,32,144404,28,95303,10x 3' v2 (239707),True,True
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Banovich_Kropski_2020,12,57668,38,121894,10x 5' v1 (117948); 10x 5' transcription profiling (57668); 10x 5' v2 (3946),False,True
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Misharin_Budinger_2018,5,15517,8,41220,10x 3' v2 (56737),True,True
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Sheppard_2020,3,33817,3,27786,10x 3' v2 (61603),True,True
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Barbry_Leroy_2020,0,0,10,74487,10x 3' v2 (74487),True,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Duong_lungMAP_unpubl,0,0,1,53904,10x 3' v3 (53904),True,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Gomperts_2021,0,0,20,23119,10x 3' v2 (12612); Drop-seq (9403); 10x 3' v3 (1104),False,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Jain_Misharin_2021,0,0,7,45557,10x 5' v2 (33135); 10x 5' v1 (12422),False,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Janssen_2020,0,0,10,49384,10x 3' v3 (46898); 10x 3' v2 (2486),True,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Lafyatis_Rojas_2019,0,0,6,24181,10x 3' v2 (21260); 10x 3' v1 (2921),True,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Meyer_Nikolic_2022,0,0,36,119634,10x 5' v1 (119634),False,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Misharin_2021,0,0,2,64843,10x 3' v3 (64843),True,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Nawijn_2021,0,0,10,70402,10x 3' v2 (70402),True,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Seibold_2020,0,0,14,33593,10x 3' v3 (21466); 10x 3' v2 (12127),True,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Shalek_2018,0,0,3,7603,Seq-Well (7603),False,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Tata_unpubl,0,0,3,21700,10x 3' v3 (21700),True,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Teichmann_Meyer_2019,0,0,6,12231,10x 3' v2 (12231),True,False
+HLCA_full,9f222629-9e39-47d0-b83f-e08d610c7479,Zhang_2021,0,0,3,19137,10x 3' v2 (16582); 10x 3' v3 (2555),True,False
+Natri_2024_ILD,f14bc322-1322-4184-8d16-409557525ea5,GSE227136,0,0,4,11016,10x 5' v2 (11016),False,False
+Natri_2024_ILD,f14bc322-1322-4184-8d16-409557525ea5,unpublished,0,0,1,6,10x 5' v2 (6),False,False

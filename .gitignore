@@ -1,0 +1,10 @@
+data/
+logs/
+*.h5ad
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+lightning_logs/
+results/**/*.h5ad
+*.egg-info/

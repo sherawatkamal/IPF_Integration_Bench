@@ -1,0 +1,95 @@
+# SignalKeep configuration. All paths, parameters and seeds live here; src/ has no magic numbers.
+
+project: SignalKeep
+
+paths:
+  data_raw: data/raw
+  data_processed: data/processed
+  data_integrated: data/integrated
+  results: results
+  tables: results/tables
+  figures: results/figures
+  census_exploration: results/census_exploration
+  logs: logs
+
+seeds:
+  global: 0
+  subsample: 1
+  stress_draws: [11, 12, 13]
+
+census:
+  # Pinned dated release (LTS "stable" at time of exploration).
+  version: "2025-11-08"   # resolved from "stable" on 2026-11-04
+  organism: homo_sapiens
+  tissue_general: lung
+  is_primary_data: true
+  obs_columns:
+    - dataset_id
+    - donor_id
+    - disease
+    - disease_ontology_term_id
+    - assay
+    - cell_type
+    - cell_type_ontology_term_id
+    - tissue
+    - tissue_general
+    - suspension_type
+    - sex
+    - development_stage
+    - is_primary_data
+
+disease:
+  ipf_labels: ["idiopathic pulmonary fibrosis"]
+  control_labels: ["normal"]
+  # Kept but routed to a side file, never mixed into the IPF arm (user decision 2026-11-04).
+  side_labels: ["pulmonary fibrosis", "interstitial lung disease"]
+
+assay:
+  # Prefer 10x 3' chemistries. If fewer than min_studies remain, stop and ask before relaxing.
+  preferred: ["10x 3' v1", "10x 3' v2", "10x 3' v3", "10x 3' transcription profiling"]
+  min_studies: 4
+
+# Census has no IPF label (checked 2026-11-04 on release 2025-11-08). IPF is taken from author columns.
+sources:
+  - name: HLCA_full
+    dataset_id: 9f222629-9e39-47d0-b83f-e08d610c7479
+    study_col: study
+    condition_col: lung_condition
+    ipf_value: IPF
+    control_values: [Healthy]
+    label_col: original_ann_nonharmonized
+    columns: [study, lung_condition, disease, donor_id, sample, assay, is_primary_data, core_or_extension, tissue, original_ann_nonharmonized]
+  - name: Natri_2024_ILD
+    dataset_id: f14bc322-1322-4184-8d16-409557525ea5
+    study_col: study
+    condition_col: Diagnosis
+    ipf_value: IPF
+    control_values: [Control]
+    label_col: manual_annotation_1
+    columns: [study, Diagnosis, disease, donor_id, sample_name, Processing_site, assay, is_primary_data, manual_annotation_1]
+
+study_selection:
+  min_donors_per_condition: 2   # a study must have >= this many IPF and control donors to count as "both"
+  target_ipf_donors: 20
+  target_control_donors: 20
+
+subsample:
+  full_max_cells: 200000
+  small_max_cells: 30000
+  small_n_studies: 3
+
+slurm:
+  account: introtogds
+  cpu:
+    cluster: owl
+    partition: normal_q
+    cpus: 16
+    mem: 128G
+    time: "12:00:00"
+  gpu:
+    cluster: falcon
+    partitions: [a30_normal_q, l40s_normal_q]
+    gpus: 1
+    cpus: 16
+    mem: 128G
+    time: "12:00:00"
